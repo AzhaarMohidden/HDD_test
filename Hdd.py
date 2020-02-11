@@ -32,6 +32,10 @@ def run_lsblk():
     os.system("lsblk")
     os.system("echo \"|\" > found_hdd.txt")
     os.system("echo \"|->\" && lsblk | grep sdb   >> found_hdd.txt")
+    os.system("echo \"|->\" && lsblk | grep sdc   >> found_hdd.txt")
+    os.system("echo \"|->\" && lsblk | grep sdd   >> found_hdd.txt")
+    os.system("echo \"|->\" && lsblk | grep sde   >> found_hdd.txt")
+    os.system("echo \"|->\" && lsblk | grep sdf   >> found_hdd.txt")
     print("\n  ")
     print("\n  ")
     os.system("bash t.sh")
@@ -54,7 +58,6 @@ global ans
 ans = False
 nm.display_azhaar()
 os.system("sudo mount /dev/sda2 /media/cltws/sda2 ")
-os
 ld.mn_ld(" Running bulkstorage analysis...")
 run_lsblk()
 #os.system("echo -n \"|-> \"  && lsblk | grep sdc >> found_hdd.txt")
@@ -70,5 +73,4 @@ print("Fdisk Completed...")
 mkfs_ini()
 copy_ans = yes_or_no("Start copy test?...")
 if (copy_ans == True):
-
-copy_foo()
+    copy_foo()

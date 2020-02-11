@@ -4,7 +4,7 @@ def load_ind(x, ad):
         0: ad + " * -> 1",
         1: ad + " / -> 2",
         2: ad + " - -> 3",
-        3: ad + r "\ -> 4 ",
+        3: ad + r"\ -> 4 ",
         4: ad + " | -> 5",
     }
     print switcher.get(x, "Invalid month")
